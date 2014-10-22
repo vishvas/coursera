@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Coursera : Coursera :Developing Data Products by Brian Caffo, PhD, Jeff Leek, PhD, Roger D. Peng, PhD from  John Hopkins University">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Coursera</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/vishvas/coursera">View on GitHub</a>
+
+          <h1 id="project_title">Coursera</h1>
+          <h2 id="project_tagline">Coursera :Developing Data Products by Brian Caffo, PhD, Jeff Leek, PhD, Roger D. Peng, PhD from  John Hopkins University</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/vishvas/coursera/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/vishvas/coursera/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="body-mass-index-bmi-calculator-developing-data-products-project" class="anchor" href="#body-mass-index-bmi-calculator-developing-data-products-project"><span class="octicon octicon-link"></span></a>Body Mass Index (BMI) Calculator Developing Data Products Project</h3>
+
+<pre><code>    Developing Data Products Project"
+</code></pre>
+
+<p>author: "Vishvas Patel"</p>
+
+<h3>
+<a name="what-is-bmi" class="anchor" href="#what-is-bmi"><span class="octicon octicon-link"></span></a>What is BMI?</h3>
+
+<p>The Body Mass Index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. Regarding the BMI measure, the World Health Organization (WHO) proposes the following classification:</p>
+
+<pre><code>BMI &lt;18.5 : Underweight
+BMI [18.5-24.9] : Normal weight
+BMI [25-29.9] : Overweight
+BMI &gt;=30 : Obesity
+</code></pre>
+
+<h2>
+<a name="how-is-it-calculated" class="anchor" href="#how-is-it-calculated"><span class="octicon octicon-link"></span></a>How is it calculated?</h2>
+
+<p>There is a formula for calculating the BMI measure. The formula is the following:</p>
+
+<p>BMI = weight(kg) / height(metres)2</p>
+
+<p>Thus for the next example, the BMI will be:</p>
+
+<p>weight = 75
+height = 1.8
+BMI &lt;- weight/height^2
+BMI  23.15</p>
+
+<h3>
+<a name="diagnostic" class="anchor" href="#diagnostic"><span class="octicon octicon-link"></span></a>Diagnostic</h3>
+
+<p>The function use for calculating the diagnostic is the following:</p>
+
+<p>diagnostic_f &lt;- function(weight, height) {
+    BMI_value &lt;- weight/(height^2)
+    ifelse(BMI_value &lt; 18.5, "underweight", ifelse(BMI_value &lt; 25, "normal weight", 
+        ifelse(BMI_value &lt; 30, "overweight", "obesity")))
+}</p>
+
+<p>For our example (weight=75 kg and height=1.80 m) the diagnostic would be:</p>
+
+<p>diagnostic_f(75, 1.8) : "normal weight"</p>
+
+<h3>
+<a name="conclusion" class="anchor" href="#conclusion"><span class="octicon octicon-link"></span></a>Conclusion</h3>
+
+<p>The BMI is a relatively easy, cheap and non-invasive method for establishing weight status, and for most people, it correlates reasonably well with their level of body fat.</p>
+
+<p>However, BMI is only a proxy for body fatness. other factors such as fitness, ethnic origin and puberty can alter the relation between BMI and body fatness and must be taken into consideration.</p>
+
+<p>for more details: <a href="mailto:vishvaspatel34@gmail.com">vishvaspatel34@gmail.com</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Coursera maintained by <a href="https://github.com/vishvas">vishvas</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
